@@ -1,0 +1,279 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://weloveiconfonts.com/api/?family=maki);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+[class*="fontawesome-"]:before {
+	font-family: 'fontawesome', sans-serif;
+}
+[class*="maki-"]:before {
+	font-family: 'maki', sans-serif;
+}
+[class*="zocial-"]:before {
+	font-family: 'zocial', sans-serif;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	background-color: white;
+	color: #434A54;
+}
+
+ul, menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* TITLES */
+h1 {
+	margin: 0 0 15px 0;
+	font-size: 3em;
+	font-weight: normal;
+}
+h2 {
+	margin: 15px 0 0 0;
+	font-size: 2em;
+	font-weight: normal;
+}
+h3 {
+	text-align: center;
+	margin: 0;
+	padding: 15px;
+	font-size: 2em;
+}
+h4 {
+	font-size: 1.3em;
+	margin: 5px 0;
+}
+
+/* HEADER */
+#head {
+	text-align: center;
+	padding: 50px 0;
+}
+#head a {
+	color: black;
+}
+#head ul {
+	margin: 10px 0;
+}
+#head ul li {
+	padding: 5px 10px;
+	display: inline-block;
+	border-right: solid 1px #434A54;
+}
+#head ul li:last-child {
+	border: none; 
+}
+/* Small screens */
+@media all and (max-width: 500px) {
+	#head ul li {
+		border-right: none;
+	}
+}
+
+/* TIMELINE */
+#job,
+#study {
+	width: 100%;
+	color: white;
+	padding: 10px 0 50px 0;
+}
+#job {
+	background-color: #5D9CEC;
+}
+#study {
+	background-color: #4A89DC;
+}
+#job > h3 > span {
+	background-color: #4A89DC;
+}
+#study > h3 > span {
+	background-color: #5D9CEC;	
+}
+#job > h3 > span,
+#study > h3 > span {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 50%;
+}
+#job > section,
+#study > section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+#job .right-arrow,
+#job .up-arrow {
+	font-size: 3em;
+	color: #4A89DC;
+}
+#study .right-arrow,
+#study .up-arrow {
+	font-size: 3em;
+	color: #5D9CEC;
+}
+.up-arrow {
+	display: none;
+}
+/* Small screens */
+@media all and (max-width: 500px) {
+	#job > section,
+	#study > section {
+		/* On small screens, we are no longer using row direction but column */
+  	  	flex-direction: column-reverse;
+  	}
+	.right-arrow {
+		display: none;
+	}
+	.up-arrow {
+		display: inline;
+	}
+}
+
+#job > section > *,
+#study > section > * {
+	text-align: center;
+}
+#job > section > article,
+#study > section > article {
+	flex: 1;
+}
+
+#job > section > article > summary,
+#study > section > article > summary {
+	display: none;
+}
+
+/* SKILLS */
+#skills {
+	width: 100%;
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+#skills h4 {
+	color: #5D9CEC;
+}
+#skills p {
+	font-size: 1.2em;
+	font-style: italic;
+}
+#skills > section {
+	display: flex;
+}
+/* Small screens */
+@media all and (max-width: 500px) {
+	#skills > section {
+		flex-direction: column;
+	}
+}
+
+#skills > section > article {
+	flex: 1;
+	padding: 0 20px;
+	font-size: 1em;
+}
+#skills > section > article > header {
+	padding: 10px;
+	font-size: 3em;
+}
+
+/* OTHER */
+#divers {
+	width: 100%;
+	text-align: center;
+	padding: 10px 0 50px 0;
+	/*background-color: #E9573F;*/
+}
+#divers > section > article {
+	padding: 20px;
+}
+#divers small {
+	padding: 5px;
+	font-size: 1em;
+}
+#divers em {
+	text-decoration: none;
+	font-size: 5px;
+	font-size: 1.5em;
+}
+
+/* CONTACT */
+#contact {
+	color: #CCD1D9;
+	padding: 50px 0 64px 0;
+}
+#contact a {
+	text-decoration: none;
+	color: #CCD1D9;
+}
+#contact > section {
+	display: flex;
+}
+#contact > section > * {
+	flex: 1;
+	text-align: center;
+	font-size: 3em;
+}
+#email:hover {
+	color: black;
+}
+#linkedin:hover {
+	color: #0077B5;
+}
+#viadeo:hover {
+	color: black;
+}
+#google:hover {
+	color: #dd4b39;
+}
+#facebook:hover {
+	color: #3b5998;
+}
+
+
+/*PROJECTS*/
+#projets {
+	width: 100%;
+	text-align: center;
+	padding: 10px 0 50px 0;
+}
+#projets > h4 {
+	color: #5D9CEC;
+}
+#projets > section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+#projets > section > * {
+	flex: 1;
+	text-align: center;
+}
+#projets > section > div {
+	padding: 10px;
+}
+#projets > section > div > a {
+	font-size: 1.2em;
+	color: black;
+}
+@media all and (max-width: 500px) {
+	#projets > section {
+		flex-direction: column;
+	}
+}
+
+
+
+/* FOOTER */
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 20px;
+}
