@@ -213,6 +213,7 @@ h4 {
 }
 #contact > section {
 	display: flex;
+	align-items: center;
 }
 #contact > section > * {
 	flex: 1;
@@ -222,7 +223,7 @@ h4 {
 #email:hover {
 	color: black;
 }
-#linkedin:hover {
+#github:hover {
 	color: #0077B5;
 }
 #viadeo:hover {
