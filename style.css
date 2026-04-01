@@ -250,21 +250,44 @@ h4 {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+	gap: 15px;
+	padding: 0 20px;
 }
 #projets > section > * {
 	flex: 1;
 	text-align: center;
+	min-width: 200px;
 }
 #projets > section > div {
-	padding: 10px;
+	padding: 15px;
+	border: 2px solid #5D9CEC;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	background-color: #f9f9f9;
+}
+#projets > section > div:hover {
+	border-color: #4A89DC;
+	background-color: #f0f5ff;
+	box-shadow: 0 4px 12px rgba(90, 156, 236, 0.3);
+	transform: translateY(-2px);
 }
 #projets > section > div > a {
 	font-size: 1.2em;
-	color: black;
+	color: #5D9CEC;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+#projets > section > div:hover > a {
+	color: #4A89DC;
 }
 @media all and (max-width: 500px) {
 	#projets > section {
 		flex-direction: column;
+		padding: 0 10px;
+	}
+	#projets > section > div {
+		min-width: unset;
 	}
 }
 
